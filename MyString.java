@@ -18,22 +18,10 @@ public class MyString {
 
     /** Returns the lowercase version of the given string. */
     public static String lowerCase(String str) {
-<<<<<<< HEAD
-        // Replace the following statement with your code
-        return null;
-    }
-
-    /** If str1 contains str2, returns true; otherwise returns false. */
-    public static boolean contains(String str1, String str2) {
-        // Replace the following statement with your code
-        return false;
-    }
-=======
         String str1 = "";
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
             if (c >= 'A' && c <= 'Z') {
-                // Convert uppercase to lowercase by adding 32 to its ASCII code
                 c = (char)(c + 32); 
             }
             str1 += c;
@@ -65,5 +53,4 @@ public static boolean contains(String str1, String str2) {
     return false;
 }
 
->>>>>>> f824e41 (HW4)
 }

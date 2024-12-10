@@ -139,14 +139,17 @@ public class ArrCharOps {
     }
 
     public static int compareTo(String str1, String str2) {
+        if (str1 == "" || str2 == ""){
+            System.out.println("Error");
+        }
         if (str1 == null && str2 == null) {
             return 0;
         }
-        if (str1 == null || str1 == "") {
+        if (str1 == null) {
             return -1;
         }
-        if (str2 == null || str2 == "") {
-            return -1;
+        if (str2 == null) {
+            return 1;
         }
         int minLength = Math.min(str1.length(), str2.length());
         for (int i = 0; i < minLength; i++) {

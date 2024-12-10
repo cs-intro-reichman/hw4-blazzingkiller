@@ -35,9 +35,9 @@ public class MyString {
  */
 public static boolean contains(String str1, String str2) {
     if (str2.length() > str1.length()) {
-        System.out.println("Error, second string larger than first");
         return false;
     }
+    
     for (int i = 0; i <= str1.length() - str2.length(); i++) {
         int j;
         for (j = 0; j < str2.length(); j++) {

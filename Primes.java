@@ -17,7 +17,7 @@ public class Primes {
                 }
             }
         }
-
+        System.out.println("Prime numbers up to 7:");
         int count = 0;
         for (int i = 2; i <= n; i++) {
             if (isPrime[i]) {
@@ -26,7 +26,7 @@ public class Primes {
             }
         }
         double percentage = 100.0 * count / n;
-        System.out.println("There are " + count + " primes between 2 and " + n + "(" + (int) percentage + "% are primes)");
+        System.out.println("There are " + count + " primes between 2 and " + n + " (" + (int) percentage + "% are primes)");
     }
 }
 

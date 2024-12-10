@@ -143,10 +143,10 @@ public class ArrCharOps {
             return 0;
         }
         if (str1.length() == 0) {
-            return -1;
+            return str2.length() - str1.length();
         }
         if (str2.length() == 0) {
-            return 1;
+            return str1.length() - str2.length();
         }
         
         int minLength = Math.min(str1.length(), str2.length());

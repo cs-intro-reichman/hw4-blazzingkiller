@@ -59,7 +59,7 @@ public class ArrCharOps {
     public static char charAt(char[] arr, int index) {
         if (arr == null || index < 0 || index >= arr.length) {
             System.out.println("Value out of bounds");
-            return '\0'; // Null character
+            return '\0'; 
         }
         return arr[index];
     }
@@ -116,7 +116,7 @@ public class ArrCharOps {
 
     public static char[] subArray(char[] arr, int beginIndex, int endIndex) {
         if (arr == null || beginIndex < 0 || endIndex > arr.length || beginIndex > endIndex) {
-            return new char[0]; // Return an empty array if the range is invalid
+            return new char[0]; 
         }
         char[] subarr = new char[endIndex - beginIndex];
         for (int i = beginIndex; i < endIndex; i++) {
@@ -146,7 +146,7 @@ public class ArrCharOps {
             return -1;
         }
         if (str2 == null) {
-            return 1;
+            return -1;
         }
         int minLength = Math.min(str1.length(), str2.length());
         for (int i = 0; i < minLength; i++) {
